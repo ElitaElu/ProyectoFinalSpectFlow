@@ -82,7 +82,7 @@ jobs:
           keep_files: true
           user_name: ElitaElu
 
-          user_email: elitachio266@hotmail.com
+          user_email: elitachio266@gmail.com
           publish_branch: gh_page  
     - name: Test marketplace action
       uses: simple-elf/allure-report-action@master
