@@ -1,62 +1,49 @@
+name: dotnet package
 
-name: .NET Core Desktop
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: [push]
 
 jobs:
-
   build:
 
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        configuration: [Debug, Release]
-
-    runs-on: windows-latest  # For a list of available runner types, refer to
-                             # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
-
-    
+        dotnet-version: [ '4.7.2' ]
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
-      uses: actions/setup-dotnet@v3
-      with:
-       dotnet-version: ${{ matrix.dotnet-version }}
-    - name: Install dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
-    - name: Execute Test Cases
-      run: dotnet test --no-restore --verbosity normal
-    - name: "Publish test results"
-      uses: peaceiris/actions-gh-pages@v3.7.3
-      if: ${{ always() }}
-      with:
+      - uses: actions/checkout@v3
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+      - name: Install dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+      - name: Execute Test Cases
+        run: dotnet test --no-restore --verbosity normal
+      - name: "Publish test results"
+        uses: peaceiris/actions-gh-pages@v3.7.3
+        if: ${{ always() }}
+        with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: './ProyectoFinalSpectFlow/bin/Debug/allure-results'
           keep_files: true
           user_name: ElitaElu
-
           user_email: elitachio266@gmail.com
           publish_branch: gh_page  
-    - name: Test marketplace action
-      uses: simple-elf/allure-report-action@master
-      if: always()
-      id: allure-report
-      with:
+      - name: Test marketplace action
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        id: allure-report
+        with:
           allure_results: './ProyectoFinalSpectFlow/bin/Debug/allure-results'
           gh_pages: gh-pages
           allure_report: allure-report
-    - name: Deploy report to Github Pages
-      if: always()
-      uses: peaceiris/actions-gh-pages@v2
-      env:
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-report     
-
-   
+          PUBLISH_DIR: allure-report    
