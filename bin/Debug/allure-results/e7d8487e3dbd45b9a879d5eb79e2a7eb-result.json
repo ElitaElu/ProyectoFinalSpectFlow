@@ -1,0 +1,79 @@
+{
+  "uuid": "0f90381b7ef9434b9e0148853c969439",
+  "historyId": "UpdateProduct",
+  "fullName": "UpdateProduct",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-GKULGQJ"
+    },
+    {
+      "name": "feature",
+      "value": "Testing"
+    }
+  ],
+  "links": [],
+  "name": "UpdateProduct",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I have a valid Product Id 19",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686366863167,
+      "stop": 1686366863587
+    },
+    {
+      "name": "When  I sent put request",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686366863587,
+      "stop": 1686366863867
+    },
+    {
+      "name": "Then  I expected valid product updated",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686366863867,
+      "stop": 1686366863868
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686366863167,
+  "stop": 1686366863868
+}

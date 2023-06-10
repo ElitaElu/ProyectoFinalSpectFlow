@@ -1,0 +1,79 @@
+{
+  "uuid": "53bc3966b8f0485e88f924ad81ed8617",
+  "historyId": "CreateProduct",
+  "fullName": "CreateProduct",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-GKULGQJ"
+    },
+    {
+      "name": "feature",
+      "value": "Testing"
+    }
+  ],
+  "links": [],
+  "name": "CreateProduct",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I have valid parameters",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686366861309,
+      "stop": 1686366862178
+    },
+    {
+      "name": "When  I sent post  request",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686366862179,
+      "stop": 1686366862469
+    },
+    {
+      "name": "Then  I expected valid product added",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686366862469,
+      "stop": 1686366862513
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686366861296,
+  "stop": 1686366862516
+}

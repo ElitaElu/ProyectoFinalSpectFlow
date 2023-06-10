@@ -1,0 +1,79 @@
+{
+  "uuid": "0b74d16c9df94e2594e3e4bd642101bd",
+  "historyId": "GetProductbyId",
+  "fullName": "GetProductbyId",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-GKULGQJ"
+    },
+    {
+      "name": "feature",
+      "value": "Testing"
+    }
+  ],
+  "links": [],
+  "name": "GetProductbyId",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I have a valid Id 17",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686366862862,
+      "stop": 1686366862864
+    },
+    {
+      "name": "When  I sent get request",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686366862864,
+      "stop": 1686366863164
+    },
+    {
+      "name": "Then  I expected valid code response",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686366863164,
+      "stop": 1686366863164
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686366862862,
+  "stop": 1686366863164
+}

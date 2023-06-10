@@ -1,0 +1,79 @@
+{
+  "uuid": "c70aa581b9434bbf973abe473cfbf84d",
+  "historyId": "GetProductByCategory",
+  "fullName": "GetProductByCategory",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-GKULGQJ"
+    },
+    {
+      "name": "feature",
+      "value": "Testing"
+    }
+  ],
+  "links": [],
+  "name": "GetProductByCategory",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I have a valid category  7",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686366862524,
+      "stop": 1686366862531
+    },
+    {
+      "name": "When  I sent get products request",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686366862531,
+      "stop": 1686366862853
+    },
+    {
+      "name": "Then  I expected valid code ok response",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686366862853,
+      "stop": 1686366862861
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686366862524,
+  "stop": 1686366862861
+}
